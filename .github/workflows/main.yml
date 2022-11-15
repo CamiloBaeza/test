@@ -9,8 +9,7 @@ jobs:
   subir-archivo:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@master
-      - uses: CamiloBaeza/test@master
+      - uses: actions/checkout@v2
         with:
           aws_key_id: ${{secrets.AWS_KEY_ID}}
           aws_secret_acces_key: ${{secrets.AWS_SECRET_ACCESS_KEY}}
