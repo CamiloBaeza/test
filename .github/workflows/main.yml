@@ -1,7 +1,9 @@
 
 name: Subir a s3
 
-on: [pull_request]
+on:
+  push:
+    branches: [ "main" ]
 
 jobs:
   subir-archivo:
